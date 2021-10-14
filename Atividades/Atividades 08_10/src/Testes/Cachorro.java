@@ -1,22 +1,23 @@
 package Testes;
 
-public class Cachorro extends Animal {
+public class Cachorro extends Animal implements AnimaisDomesticados {
 
-	public static void main(String[] args) {
-		
-    Animal cachorro = new Animal();
-    
-    cachorro.setNome("Dog");
-    cachorro.setIdade(11);
-    cachorro.setSom("latido");
-    
-    System.out.println("O nome do cachorro é: " + cachorro.getNome());
-    System.out.println("A idade do cachorro é: " + cachorro.getIdade());
-    System.out.println("O som que ele emite é um: " + cachorro.getSom());
-    
-    cachorro.Correr();
-    cachorro.Descansar();
-    
+	private String correr;
+
+	public String getCorrer() {
+		return correr;
 	}
+
+	public void setCorrer(String correr) {
+		this.correr = correr;
+	}
+
+	@Override
+	public String VivemComHumanos(String VivemComHumanos) {
+		// TODO Auto-generated method stub
+		return VivemComHumanos = "E ele vive com humanos...";
+	}
+	
+	
 
 }

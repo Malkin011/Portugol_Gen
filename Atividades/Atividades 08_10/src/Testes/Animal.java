@@ -1,23 +1,12 @@
 package Testes;
 
-public class Animal {
+public abstract class Animal {
 
 	private String nome;
 	private int idade;
 	private String som;
 	
-	void Correr()
-	{
-		System.out.println("\nO " + nome + " est· correndo...");
-	}
-	 void SubirNa¡rvore()
-	 {
-		 System.out.println("\nO " + nome + " est· subindo na ·rvore...");
-	 }
-	void Descansar()
-	{
-		System.out.println("\nO " + nome + " est· descansando...");
-	}
+	
 	public String getNome() {
 		return nome;
 	}
@@ -36,4 +25,7 @@ public class Animal {
 	public void setSom(String som) {
 		this.som = som;
 	}
+
+	
+	
 }

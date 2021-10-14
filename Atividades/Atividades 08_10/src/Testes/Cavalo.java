@@ -1,21 +1,20 @@
 package Testes;
 
-public class Cavalo {
+public class Cavalo extends Animal implements AnimaisDomesticados {
 
-	public static void main(String[] args) {
-		Animal cavalo = new Animal();
-		
-		cavalo.setNome("Jean");
-		cavalo.setIdade(11);
-		cavalo.setSom("Relinchar");
-		
-		System.out.println("O nome do cavalo é: " + cavalo.getNome());
-		System.out.println("A idade do cavalo é: " + cavalo.getIdade());
-		System.out.println("O som que o cavalo emite é: " + cavalo.getSom());
-		
-		cavalo.Correr();
-		cavalo.Descansar();
-
+	private String correr;
+	
+	public String getCorrer() {
+		return correr;
 	}
 
+	public void setCorrer(String correr) {
+		this.correr = correr;
+	}
+
+	@Override
+	public String VivemComHumanos(String VivemComHumanos) {
+		
+		return VivemComHumanos = "E ele convive com humanos...";
+	}
 }
